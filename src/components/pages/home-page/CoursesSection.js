@@ -60,9 +60,8 @@ export default function CoursesSection() {
 
         <Row>
           {coursesData.map((courseObj) => (
-            <Col>
+            <Col key={courseObj.id}>
               <Card1
-                key={courseObj.id}
                 mainImg={courseObj.mainImg}
                 button1Content={"Add To Cart"}
                 button2Content={"View details"}
