@@ -7,6 +7,7 @@ import SectionHeader from "@/components/shared-components/SectionHeader";
 
 const coursesData = [
   {
+    id: Math.random(),
     mainImg: courses,
     title: "Global Marketing",
     price: 500,
@@ -20,6 +21,7 @@ const coursesData = [
     videoSrc: "/edmax-video.mp4",
   },
   {
+    id: Math.random(),
     mainImg: courses,
     title: "Global Marketing",
     price: 500,
@@ -33,6 +35,7 @@ const coursesData = [
     videoSrc: "/edmax-video.mp4",
   },
   {
+    id: Math.random(),
     mainImg: courses,
     title: "Global Marketing",
     price: 500,
@@ -59,6 +62,7 @@ export default function CoursesSection() {
           {coursesData.map((courseObj) => (
             <Col>
               <Card1
+                key={courseObj.id}
                 mainImg={courseObj.mainImg}
                 button1Content={"Add To Cart"}
                 button2Content={"View details"}
