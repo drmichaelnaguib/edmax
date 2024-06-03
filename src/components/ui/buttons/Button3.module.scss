@@ -1,0 +1,15 @@
+@import "../../../app/assets/scss/variables";
+
+.button3 {
+  background-color: $color-blue-1;
+  width: 300px;
+  padding: 20px 30px;
+  font-weight: 400;
+  color: $color-secondary;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-blue-2;
+  }
+}

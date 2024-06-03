@@ -1,0 +1,42 @@
+@import "../../../app/assets/scss/variables";
+
+.who-we-are-section {
+  margin-bottom: 100px;
+  .content-container {
+    h2 {
+      color: $color-blue-2;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 50px;
+      font-weight: 600;
+    }
+    p {
+      color: $color-grey-1;
+      font-weight: 400;
+      font-size: 22px;
+    }
+  }
+  .image-container {
+    width: 100%;
+    height: 100%;
+    .who-we-are-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .who-we-are-section {
+    .content-container {
+      margin-bottom: 40px;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../app/assets/scss/variables";
+
+.app-download-button {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: 2px solid $color-off-white;
+  border-radius: 4px;
+  &:hover {
+    background-color: $color-off-white;
+
+    svg {
+      color: $color-blue-1;
+    }
+    .button-txt-container {
+      span {
+        color: $color-blue-1;
+      }
+    }
+  }
+
+  svg {
+    color: $color-off-white;
+  }
+
+  .button-txt-container {
+    span {
+      display: block;
+      color: $color-off-white;
+
+      &:nth-child(1) {
+        font-size: 14px;
+        font-weight: 300;
+      }
+      &:nth-child(2) {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
