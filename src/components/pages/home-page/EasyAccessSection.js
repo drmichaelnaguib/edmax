@@ -2,7 +2,7 @@ import Image from "next/image";
 import easyAccessImg from "@/app/assets/images/pages/home/easy-access-img.png";
 import Button1 from "@/components/ui/buttons/Button1";
 import styles from "./EasyAccessSection.module.scss";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function EasyAccessSection() {
@@ -32,6 +32,7 @@ export default function EasyAccessSection() {
             <div className={styles["image-container"]}>
               <Image
                 src={easyAccessImg}
+                alt="phone app"
                 className={styles["easy-access-image"]}
               />
             </div>

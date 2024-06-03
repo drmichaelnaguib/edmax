@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./Card1.module.scss";
 import Button1 from "@/components/ui/buttons/Button1.js";
 import Button2 from "@/components/ui/buttons/Button2.js";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
 export default function Card1({
   mainImg,
@@ -19,20 +19,15 @@ export default function Card1({
   button2Content,
   videoSrc,
 }) {
-  // states
-  const [cardContentType, setCardContentType] = useState("image");
-
   const videoRef = useRef(null);
 
   const handleMouseEnter = () => {
-    setCardContentType("video");
     if (videoRef.current) {
       videoRef.current.play();
     }
   };
 
   const handleMouseLeave = () => {
-    setCardContentType("image");
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
@@ -47,7 +42,7 @@ export default function Card1({
     >
       <div className={styles["card-header-container"]}>
         <div className={styles["image-container"]}>
-          <Image src={mainImg} className={styles["main-img"]} />
+          <Image src={mainImg} alt={cardTitle} className={styles["main-img"]} />
           <video
             ref={videoRef}
             className={styles.video}
@@ -75,7 +70,7 @@ export default function Card1({
             <p className={styles["extra-info-txt"]}>{cardExtraInfo}</p>
             <div className={styles["card-owner-info"]}>
               <h4 className={styles["owner-name"]}>{ownerName}</h4>
-              <Image src={secImg} />
+              <Image src={secImg} alt={ownerName} />
             </div>
           </div>
         </div>

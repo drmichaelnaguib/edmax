@@ -17,7 +17,7 @@ export default function SliderSection() {
         onClick={onClick}
         className={`${styles["slider-btn"]} ${styles.next}`}
       >
-        <Image src={nextSvg} />
+        <Image src={nextSvg} alt="next" />
       </SliderArrowButton>
     );
   };
@@ -28,7 +28,7 @@ export default function SliderSection() {
         onClick={onClick}
         className={`${styles["slider-btn"]} ${styles.prev}`}
       >
-        <Image src={previousSvg} />
+        <Image src={previousSvg} alt="prev" />
       </SliderArrowButton>
     );
   };
@@ -42,12 +42,21 @@ export default function SliderSection() {
           renderArrowNext={renderArrowNext}
           renderArrowPrev={renderArrowPrev}
           showIndicators={false}
+          showThumbs={false}
         >
           <div className={styles["img-container"]}>
-            <Image src={sliderPlaceholder} className={styles["slider-img"]} />
+            <Image
+              src={sliderPlaceholder}
+              alt="slide 1"
+              className={styles["slider-img"]}
+            />
           </div>
           <div className={styles["img-container"]}>
-            <Image src={sliderPlaceholder} className={styles["slider-img"]} />
+            <Image
+              src={sliderPlaceholder}
+              alt="slide 2"
+              className={styles["slider-img"]}
+            />
           </div>
         </Carousel>
       </div>

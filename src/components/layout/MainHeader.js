@@ -29,7 +29,7 @@ export default function MainHeader() {
       <div className="section-main-container w-100 d-flex justify-content-between align-items-center">
         <div className={styles["logo-links-container"]}>
           <div className={styles["image-container"]}>
-            <Image src={Logo} />
+            <Image src={Logo} alt="Edmax logo" />
           </div>
           <nav className={styles["navigation-bar"]}>
             <ul className={styles["links-container"]}>

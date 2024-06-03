@@ -10,7 +10,7 @@ export default function MainFooter() {
     <footer className={`${styles["footer-wrapper"]} section-main-container`}>
       <Row className={styles["columns-container"]}>
         <Col md="2">
-          <Image src={footerLogo} className={styles.logo} />
+          <Image src={footerLogo} alt="Edmax logo" className={styles.logo} />
         </Col>
 
         <Col md="10">

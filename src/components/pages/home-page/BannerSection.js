@@ -34,7 +34,11 @@ export default function BannerSection() {
           </Col>
           <Col lg="4" md="12" className="order-lg-2">
             <div className={styles["image-container"]}>
-              <Image src={bannerImage} className={styles["banner-image"]} />
+              <Image
+                src={bannerImage}
+                alt="banner image"
+                className={styles["banner-image"]}
+              />
             </div>
           </Col>
         </Row>

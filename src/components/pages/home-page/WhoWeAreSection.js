@@ -2,7 +2,7 @@ import Image from "next/image";
 import whoWeAreImg from "@/app/assets/images/pages/home/who-we-are-img.png";
 import Button1 from "@/components/ui/buttons/Button1";
 import styles from "./WhoWeAreSection.module.scss";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function WhoWeAreSection() {
@@ -29,7 +29,11 @@ export default function WhoWeAreSection() {
           </Col>
           <Col lg="4" md="12" className="order-lg-2">
             <div className={styles["image-container"]}>
-              <Image src={whoWeAreImg} className={styles["who-we-are-image"]} />
+              <Image
+                src={whoWeAreImg}
+                alt="education"
+                className={styles["who-we-are-image"]}
+              />
             </div>
           </Col>
         </Row>

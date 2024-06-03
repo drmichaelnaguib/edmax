@@ -19,7 +19,7 @@ export default function Card2({
   return (
     <div className={styles.card2}>
       <div className={styles["image-container"]}>
-        <Image src={mainImg} className={styles["main-img"]} />
+        <Image src={mainImg} alt={cardTitle} className={styles["main-img"]} />
       </div>
 
       <h3 className={styles["card-title"]}>{cardTitle}</h3>
@@ -27,25 +27,25 @@ export default function Card2({
 
       <div className={styles["card-icons-container"]}>
         <div className={styles["icon-info"]}>
-          <Image src={courses} />
+          <Image src={courses} alt="courses" />
           <h5 className={styles["icon-name"]}>
             Courses <span>{coursesNo}</span>
           </h5>
         </div>
         <div className={styles["icon-info"]}>
-          <Image src={students} />
+          <Image src={students} alt="students" />
           <h5 className={styles["icon-name"]}>
             Students <span>{studentsNo}</span>
           </h5>
         </div>
         <div className={styles["icon-info"]}>
-          <Image src={views} />
+          <Image src={views} alt="views" />
           <h5 className={styles["icon-name"]}>
             Views <span>{viewsNo}</span>
           </h5>
         </div>
         <div className={styles["icon-info"]}>
-          <Image src={centers} />
+          <Image src={centers} alt="centers" />
           <h5 className={styles["icon-name"]}>
             Centers <span>{centersNo}</span>
           </h5>
